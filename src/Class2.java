@@ -1,12 +1,13 @@
-// 中文字 轉 萬國碼
-// 周教授每次上課都留一手，回家練習的我感到頭很痛
+// 中文字 轉 萬國碼 | 萬國碼 轉 中
+
 import java.util.Scanner;
 
 public class Class2 {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        String st = sc.next();
-        System.out.println((Integer.toHexString(st.charAt(0))));
+        String st = sc.nextLine();
+        int x = Integer.parseInt(st,16);
+        System.out.println((char)x);
     }
 }
